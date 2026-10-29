@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7b1025">
+  <meta name="description" content="Um cantinho digital feito com amor para Mary e Higor.">
+  <title>Nosso Mundinho ♡ | Mary & Higor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Nosso Mundinho, início"><span class="brand-heart">♥</span> nosso mundinho</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#album">Álbum</a><a href="#abra-quando">Abra quando</a><a href="#jogos">Joguinhos</a><a href="#cartinhas">Cartinhas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-ornament" aria-hidden="true">❦</div>
+      <p class="eyebrow">feito com amor, só pra você</p>
+      <h1>Mary <span class="amp">&</span> Higor</h1>
+      <p class="hero-copy">Em meio a tanta gente no mundo, meu coração ainda escolhe você.</p>
+      <div class="hero-actions">
+        <a class="button button-light" href="#album">Entrar no nosso mundinho <span>♡</span></a>
+        <button class="button button-ghost" id="surpriseHero">Uma surpresa pra você</button>
+      </div>
+      <div class="hero-stamp">♡<small>meu lugar<br>favorito</small></div>
+      <div class="hero-bottom-note">uma história que ainda está sendo escrita</div>
+    </section>
+
+    <section class="counter-wrap section" aria-label="Contador do namoro">
+      <div class="counter-card">
+        <p class="eyebrow">desde 7 de julho de 2025</p>
+        <h2>Todo dia com você é meu favorito.</h2>
+        <p class="counter-sub">E olha quanto tempo nosso amor já está crescendo…</p>
+        <div class="counter" id="relationshipCounter" aria-live="polite">
+          <div><strong id="days">—</strong><span>dias</span></div>
+          <div><strong id="hours">—</strong><span>horas</span></div>
+          <div><strong id="minutes">—</strong><span>minutos</span></div>
+          <div><strong id="seconds">—</strong><span>segundos</span></div>
+        </div>
+        <p class="tiny-note">O contador começa em 07/07/2025. O tempo é calculado no seu dispositivo.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="album">
+      <div class="section-heading">
+        <p class="eyebrow">nossos pedacinhos de eternidade</p>
+        <h2>Álbum de memórias</h2>
+        <p>Troque as imagens de exemplo pelas fotos de vocês e guarde aqui os momentos que fazem seu coração sorrir.</p>
+      </div>
+      <div class="album-grid" id="albumGrid">
+        <article class="photo-card rotate-left">
+          <div class="photo-placeholder rose-bg"><span>♡</span><small>coloque nossa foto aqui</small></div>
+          <p>meu sorriso favorito</p><span class="photo-date">uma memória nossa</span>
+        </article>
+        <article class="photo-card rotate-right">
+          <div class="photo-placeholder blush-bg"><span>✿</span><small>coloque nossa foto aqui</small></div>
+          <p>com você, tudo é melhor</p><span class="photo-date">um dia especial</span>
+        </article>
+        <article class="photo-card rotate-left">
+          <div class="photo-placeholder wine-bg"><span>♥</span><small>coloque nossa foto aqui</small></div>
+          <p>meu lugar é do seu lado</p><span class="photo-date">pra lembrar sempre</span>
+        </article>
+      </div>
+      <div class="upload-row">
+        <label class="button button-outline upload-button" for="photoUpload">＋ Adicionar fotos do celular</label>
+        <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+        <p class="tiny-note">As fotos adicionadas ficam nesta página enquanto ela estiver aberta. Para deixá-las no site publicado, coloque os arquivos na pasta <code>fotos</code> e atualize o HTML.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad dark-section" id="abra-quando">
+      <div class="section-heading light-heading">
+        <p class="eyebrow">cartas para os dias que você precisar</p>
+        <h2>Abra quando…</h2>
+        <p>Escolha um envelope. Cada um guarda um pedacinho do meu coração pra você.</p>
+      </div>
+      <div class="envelope-grid" id="envelopeGrid">
+        <button class="envelope-card" data-letter="triste"><span class="envelope-icon">✉</span><strong>Estiver triste</strong><small>um abraço em palavras</small></button>
+        <button class="envelope-card" data-letter="saudade"><span class="envelope-icon">✉</span><strong>Sentir saudade de mim</strong><small>lembra que eu tô aqui</small></button>
+        <button class="envelope-card" data-letter="inseguro"><span class="envelope-icon">✉</span><strong>Precisar se lembrar do seu valor</strong><small>você é muito especial</small></button>
+        <button class="envelope-card" data-letter="bravo"><span class="envelope-icon">✉</span><strong>Estiver bravo comigo</strong><small>vamos conversar com carinho</small></button>
+        <button class="envelope-card" data-letter="feliz"><span class="envelope-icon">✉</span><strong>Estiver muito feliz</strong><small>quero comemorar com você</small></button>
+        <button class="envelope-card" data-letter="dormir"><span class="envelope-icon">✉</span><strong>For dormir</strong><small>um beijinho de boa noite</small></button>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="jogos">
+      <div class="section-heading">
+        <p class="eyebrow">vamos brincar um pouquinho?</p>
+        <h2>Nosso cantinho de jogos</h2>
+        <p>Pequenas brincadeiras pra testar a memória, dar risada e lembrar do nosso amor.</p>
+      </div>
+      <div class="games-grid">
+        <article class="game-card">
+          <div class="game-icon">♡</div><p class="eyebrow">jogo 01</p><h3>Quiz de casal</h3>
+          <p>Será que você lembra das datas e dos detalhes da nossa história?</p>
+          <button class="button button-primary" id="startQuiz">Jogar quiz</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">✿</div><p class="eyebrow">jogo 02</p><h3>Jogo da memória</h3>
+          <p>Encontre todos os pares de símbolos românticos.</p>
+          <button class="button button-primary" id="startMemory">Jogar memória</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">✉</div><p class="eyebrow">jogo 03</p><h3>Cartinha surpresa</h3>
+          <p>Toque no botão e receba uma mensagem aleatória feita com carinho.</p>
+          <button class="button button-primary" id="drawCard">Tirar cartinha</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">⌕</div><p class="eyebrow">jogo 04</p><h3>Caça ao tesouro</h3>
+          <p>Resolva as pistas para encontrar uma declaração escondida.</p>
+          <button class="button button-primary" id="startTreasure">Começar pistas</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">✧</div><p class="eyebrow">jogo 05</p><h3>Roleta do amor</h3>
+          <p>Gire e descubra uma missão fofinha para fazerem juntos.</p>
+          <button class="button button-primary" id="spinWheel">Girar roleta</button>
+        </article>
+      </div>
+      <div class="game-stage" id="gameStage" aria-live="polite">
+        <div class="stage-empty"><span>♡</span><h3>Escolha um jogo para começar</h3><p>O próximo momento fofo está a um clique de distância.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-pad letter-section" id="cartinhas">
+      <div class="letter-visual" aria-hidden="true"><div class="big-envelope"><span>♥</span></div></div>
+      <div class="letter-copy">
+        <p class="eyebrow">uma coisa que eu queria te dizer</p>
+        <h2>Se eu pudesse te dar uma coisa…</h2>
+        <p>Eu te daria a chance de se enxergar pelos meus olhos, nem que fosse por um instante. Talvez assim você entendesse o quanto é importante pra mim e quantos detalhes seus fazem diferença nos meus dias.</p>
+        <p>Não prometo que todos os dias serão perfeitos, mas quero que a gente continue escolhendo conversar, cuidar e aprender um com o outro. Você faz parte de uma história que eu guardo com muito carinho.</p>
+        <p class="signature">Com amor, Mary ♡</p>
+        <button class="button button-primary" id="openMainLetter">Ler uma mensagem secreta</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-heart">♥</div><p>feito com carinho por Mary, para Higor</p><small>que a gente nunca esqueça de cuidar do que faz bem ao coração.</small>
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <div class="modal-flower">❦</div><p class="eyebrow">uma cartinha pra você</p>
+      <h2 id="modalTitle">Meu amor</h2>
+      <div class="modal-content" id="modalContent"></div>
+      <button class="button button-primary" id="modalOkay">Guardar no coração ♡</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
